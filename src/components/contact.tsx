@@ -2,7 +2,7 @@ import { faClock, faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-s
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const ContactUs = () => {
-    return <section className="mt-48 h-full w-full box-border px-24 m-auto flex flex-row font-notokufi">
+    return <section className=" font-notokufi mt-48 h-full w-full box-border px-24 m-auto flex flex-row font-notokufi">
         <div className="w-1/2 flex flex-col gap-2 box-border p-7">
             <h2 className="text-xl font-bold">تواصل معنا</h2>
             <p className="text-md font-mediium">

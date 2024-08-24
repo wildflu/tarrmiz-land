@@ -9,7 +9,7 @@ import Link from "next/link";
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="mt-48 flex flex-col gap-12 box-border p-24 font-notokufi mt-12 border-t-8 bg-[whitesmoke] border-sky-600 rounded-tl-md rounded-tr-md">
+        <footer className="font-notokufi mt-48 flex flex-col gap-12 box-border p-24 font-notokufi mt-12">
             <section className="flex flex-row gap-6 justify-between items-start">
                 <div className="flex flex-col justify-start w-1/4">
                     <Image className="w-60 h-24" width={0} height={0}  src="https://www.tarmeeztech.com/front/images/logo/logo.svg" alt="The Logo Not Exists" ></Image>

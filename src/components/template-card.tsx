@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRef } from 'react';
-
+import sc1 from "../../public/assets/s2.jpeg";
 
 
 interface ChildComponentProps {
@@ -9,7 +9,7 @@ interface ChildComponentProps {
 }
 
 
-export const TemplateCard = () => {
+export const TemplateCard = ( { imageSrc } ) => {
 
     const scrollContainerRef = useRef<HTMLDivElement | null>(null);
     let scrollInterval: NodeJS.Timeout | null = null;
@@ -40,15 +40,15 @@ export const TemplateCard = () => {
 
 
     return(
-        <div className="h-full overflow-hidden" onMouseEnter={startScrolling} onMouseLeave={stopScrolling} ref={scrollContainerRef}>
-            <Image
-                className="w-full h-auto"
-                width="300"
-                height="300"
-                // src={`${imageSrc}`}
-                src='https://www.tarmeeztech.com/front/images/work/1716108805screencapture-doroobalghad-2024-05-19-09_43_05.jpg'
-                alt="none"
-            />
+        <div className="h-full scrollbar scrollbar-thumb-gray-900 scrollbar-none scrollbar-track-gray-100" onMouseEnter={startScrolling} onMouseLeave={stopScrolling} ref={scrollContainerRef}>
+            <iframe
+                    // src="https://themewagon.github.io/fastes/"
+                    src={imageSrc}
+                    title="Embedded Website"
+                    className="w-full h-full scrollbar scrollbar-thumb-gray-900 scrollbar-none scrollbar-track-gray-100"
+                    allowFullScreen
+                />
         </div>
     )
+
 }

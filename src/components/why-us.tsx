@@ -10,7 +10,7 @@ import more from "../../public/assets/more.svg";
 
 export const WhyUs = () => {
     return (
-        <div className="box-border px-24 mt-48 flex flex-col items-center w-full justify-center box-border p-4 gap-24">
+        <div className="font-notokufi box-border px-24 mt-48 flex flex-col items-center w-full justify-center box-border p-4 gap-24">
             <div className="flex flex-col gap-2 items-center box-border">
                 <h3 className="text-xl font-bold">
                     لماذا تختارنا؟  

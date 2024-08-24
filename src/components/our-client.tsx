@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const OurClient = () => {
     return(
-        <section className='flex flex-row gap-10 box-border px-24'>
+        <section className=' font-notokufi mb-36 flex flex-row gap-10 box-border px-24'>
             <div className='w-1/2 flex flex-col gap-4'>
                 <p className='font-bold text-md'>عملائنا وشركاء النجاح</p>
                 <h2 className='font-bold text-4xl leading-[60px]'>العملاء الذين يختاروننا  ويصدقون أن خدماتنا <br /> هي الأفضل </h2>

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import '@fontsource/noto-kufi-arabic'; // Default weight 400
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { SideBar } from "@/components/side-bar";
+import CircleAnimation from "@/components/custem-cursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className=" font-notokufi scrollbar scrollbar-thumb-gray-900 scrollbar-none scrollbar-track-gray-100">
       <body className={inter.className}>
           <Header />
           <SideBar />
+          <CircleAnimation />
           {children}
           <Footer />
         </body>
