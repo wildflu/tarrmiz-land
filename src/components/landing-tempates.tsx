@@ -100,7 +100,7 @@ export const LandingTemplates = () => {
 
             </section>
 
-            {isFullScreen && (
+            {/* {isFullScreen && (
                 <div className="fixed flex flex-row top-0 right-0 bottom-0 left-0 bg-white inset-2 z-50">
                     <div className="box-border p-12 relative w-1/4 h-full flex flex-col gap-4 justify-center">
                         <FontAwesomeIcon icon={faXmark} onClick={()=> handleClick('')} className="absolute text-lg top-2 right-2 p-4 bg-black rounded-full text-white"/>
@@ -120,7 +120,24 @@ export const LandingTemplates = () => {
                         <TemplateCard imageSrc={screen}/>
                     </div>
                 </div>
+            )} */}
+
+            {isFullScreen && (
+                <div className="fixed flex flex-row top-0 right-0 bottom-0 left-0 bg-white inset-2 z-50">
+                    <div className="w-full h-full relative">
+                        <iframe
+                            src={screen}
+                            title="Embedded Website"
+                            className="w-full h-full scrollbar scrollbar-thumb-gray-900 scrollbar-none scrollbar-track-gray-100"
+                            allowFullScreen
+                        />
+                        <div onClick={()=> handleClick('')} className="fixed bottom-4 left-4 w-12 h-12 bg-black rounded-full box-border p-2 flex items-center justify-center">
+                            <FontAwesomeIcon icon={faXmark} className="text-white w-6 h-6"/>
+                        </div>
+                    </div>
+                </div>
             )}
+
         </div>
     );
 

@@ -1,12 +1,23 @@
+"use client"
 import { faFacebook, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import Link from "next/link"
+import ScrollProgressBar from "./scroll-prograss"
 
 
 export const SideBar = () => {
+
+    const scrollToTop = () => {
+        console.log('Back to Top clicked');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+
     return(
-        <div className="flex flex-col jistify-center items-center gap-24 fixed bottom-5 left-5">
+        <div className="font-notokufi flex flex-col jistify-center items-center gap-24 fixed bottom-5 left-0">
+            <ScrollProgressBar />
+            <p onClick={scrollToTop} className="rotate-vertical">العودة إلى الأعلى</p>
             <div className="flex flex-col jistify-center items-center gap-3">
                 <Link href="https://x.com/tarmeeztech"><FontAwesomeIcon icon={faXTwitter} className="w-5 h-5 text-sky-400"/></Link>
                 <Link href="https://www.instagram.com/tarmeeztech/"><FontAwesomeIcon icon={faInstagram} className="w-5 h-5 text-sky-400"/></Link>

@@ -9,7 +9,7 @@ export const OurPackages = () => {
     return <section className="font-notokufi flex flex-col justify-center items-center gap-5 font-notokufi">
         <h1 className="text-2xl font-bold p-12">عروضنا لك</h1>
         <div className="flex flex-row gap-3">
-            <div className="flex flex-col border border-t-8 rounded border-sky-600 box-border p-6 gap-4">
+            <div className="flex flex-col border border-t-8 rounded border-sky-600 box-border p-6 gap-4 transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <div className="flex flex-col">
                     <h3 className="font-bold text-lg text-sky-600">باقة انطلق </h3>
                     <p className="font-semibold text-md">لبدء الشركات الصغيرة</p>
@@ -72,7 +72,7 @@ export const OurPackages = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col border border-t-8 rounded border-[#a420b0] box-border p-6 gap-4">
+            <div className="flex flex-col border border-t-8 rounded border-[#a420b0] box-border p-6 gap-4  transition-transform duration-300 ease-in-out hover:-translate-y-2 ">
                 <div className="flex flex-col">
                     <h3 className="font-bold text-lg text-[#a420b0]">باقة النمو </h3>
                     <p className="font-semibold text-md"> لبدء الشركات الصغيرة أعمال متعددة</p>
@@ -136,7 +136,7 @@ export const OurPackages = () => {
             </div>
 
 
-            <div className="flex flex-col border border-t-8 rounded border-[#d62276] box-border p-6 gap-4">
+            <div className="flex flex-col border border-t-8 rounded border-[#d62276] box-border p-6 gap-4 transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <div className="flex flex-col">
                     <h3 className="font-bold text-lg text-[#d62276]">باقة االنتشار </h3>
                     <p className="font-semibold text-md">الشركات المتوسطة، مع المزيد من الخدمات</p>
@@ -207,7 +207,7 @@ export const OurPackages = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col border border-t-8 rounded border-[#4a281b] box-border p-6 gap-4">
+            <div className="flex flex-col border border-t-8 rounded border-[#4a281b] box-border p-6 gap-4 transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <div className="flex flex-col">
                     <h3 className="font-bold text-lg text-[#4a281b]">باقة االبداع  </h3>
                     <p className="font-semibold text-md">للمشاريع الكبيرة والضخمة</p>

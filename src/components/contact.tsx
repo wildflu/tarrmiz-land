@@ -2,7 +2,7 @@ import { faClock, faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-s
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const ContactUs = () => {
-    return <section className=" font-notokufi mt-48 h-full w-full box-border px-24 m-auto flex flex-row font-notokufi">
+    return <section className="font-notokufi mt-48 h-full w-full box-border px-24 m-auto flex flex-row font-notokufi">
         <div className="w-1/2 flex flex-col gap-2 box-border p-7">
             <h2 className="text-xl font-bold">تواصل معنا</h2>
             <p className="text-md font-mediium">
@@ -46,32 +46,32 @@ export const ContactUs = () => {
                 <div className="flex flex-row gap-4 items-center">
                     <FontAwesomeIcon icon={faClock} className="w-6 h-6 text-[black] bg-[whitesmoke] box-border p-4 rounded-full"/>
                     <span className="flex flex-col items-start">
-                        <h4 className="text-lg font-bold text-[#555]">الأحد - الخميس</h4>
-                        <p className="text-md text-[#888]">9:00 صباحا - 6:00 مساء</p>
+                        <h4 className="text-md font-bold text-[#555]">الأحد - الخميس</h4>
+                        <p className="text-sm text-[#888]">9:00 صباحا - 6:00 مساء</p>
                     </span>
                 </div>
 
                 <div className="flex flex-row gap-4 items-center">
                     <FontAwesomeIcon icon={faPhone} className="w-6 h-6 text-[black] bg-[whitesmoke] box-border p-4 rounded-full"/>
                     <span className="flex flex-col items-start">
-                        <h4 className="text-lg font-bold text-[#555]">اتصل بنا الآن</h4>
-                        <p className="text-md text-[#888]">+966 577 080 109</p>
+                        <h4 className="text-md font-bold text-[#555]">اتصل بنا الآن</h4>
+                        <p className="text-ms text-[#888]">+966 577 080 109</p>
                     </span>
                 </div>
 
                 <div className="flex flex-row gap-4 items-center">
                     <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 text-[black] bg-[whitesmoke] box-border p-4 rounded-full"/>
                     <span className="flex flex-col items-start">
-                        <h4 className="text-lg font-bold text-[#555]">البريد الإلكتروني</h4>
-                        <p className="text-md text-[#888]">tarmiz@gmail.com</p>
+                        <h4 className="text-md font-bold text-[#555]">البريد الإلكتروني</h4>
+                        <p className="text-ms text-[#888]">tarmiz@gmail.com</p>
                     </span>
                 </div>
 
                 <div className="flex flex-row gap-4 items-center">
                     <FontAwesomeIcon icon={faLocationDot} className="w-6 h-6 text-[black] bg-[whitesmoke] box-border p-4 rounded-full"/>
                     <span className="flex flex-col items-start">
-                        <h4 className="text-ld font-bold text-[#555]">المملكة العربية السعودية</h4>
-                        <p className="text-md text-[#888]">مكتب B7، الطابق 1 عمارة رقم 44 شارع ابن كثير الملك عبد العزيز الرياض</p>
+                        <h4 className="text-md font-bold text-[#555]">المملكة العربية السعودية</h4>
+                        <p className="text-sm text-[#888]">مكتب B7، الطابق 1 عمارة رقم 44 شارع ابن كثير الملك عبد العزيز الرياض</p>
                     </span>
                 </div>
             </nav>
