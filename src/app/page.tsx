@@ -8,12 +8,24 @@ import { WhyUs } from "@/components/why-us";
 export default function Home() {
   return (
     <>
-      <Intoduction />
-      <ContactUs/>
-      <LandingTemplates />
-      <WhyUs />
-      <OurClient />
-      <OurPackages />
+      <div id="intro">
+        <Intoduction />
+      </div>
+      <div id="contact">
+        <ContactUs/>
+      </div>
+      <div id="templates">
+        <LandingTemplates />
+      </div>
+      <div id="whyus">
+        <WhyUs />
+      </div>
+      <div id="ourclient">
+        <OurClient />
+      </div>
+      <div id="packages">
+        <OurPackages /> 
+      </div>
     </>
   )
 }

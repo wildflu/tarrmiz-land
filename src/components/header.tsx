@@ -11,13 +11,14 @@ export const Header = () => {
             </Link>
             <nav className="flex flex-row justify-center items-center gap-12">
                 <Link href="/" className="flex flex-row justify-center items-center gap-2 text-[#666]">الرئيسية</Link>
-                <Link href="/" className="flex flex-row justify-center items-center gap-2 text-[#666]">مجالاتنا</Link>
-                <Link href="/" className="flex flex-row justify-center items-center gap-2 text-[#666]">آراء العملاء</Link>
-                <Link href="/" className="flex flex-row justify-center items-center gap-2 text-[#666]">تواصل معنا</Link>
-                <Link href="/" className="flex flex-row justify-center items-center gap-2 text-[#666]">من نحن</Link>
+                <Link href="#contact" className="flex flex-row justify-center items-center gap-2 text-[#666]">تواصل معنا</Link>
+                <Link href="#templates" className="flex flex-row justify-center items-center gap-2 text-[#666]">صفحات هبوط</Link>
+                <Link href="#whyus" className="flex flex-row justify-center items-center gap-2 text-[#666]">لماذا تختارنا</Link>
+                <Link href="#packages" className="flex flex-row justify-center items-center gap-2 text-[#666]">عروضنا لك</Link>
             </nav>
             <div className="flex flex-row justify-center items-center gap-6">
-                <button className="w-24 h-12 bg-[#09080A] text-white text-sm rounded-md hover:bg-[#131118]">اتصل بنا</button>
+                {/* <button className="w-24 h-12 bg-[#09080A] text-white text-sm rounded-md hover:bg-[#131118]">اتصل بنا</button> */}
+                <button className="w-24 h-12 bg-sky-400 text-white text-sm rounded-md">اتصل بنا</button>
             </div>
         </header>
     )

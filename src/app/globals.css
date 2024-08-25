@@ -143,7 +143,7 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 99999999; /* so that it stays on top of all other elements */
+  z-index: 99; /* so that it stays on top of all other elements */
 }
 
 @layer utilities {
@@ -152,7 +152,7 @@ body {
     transform: rotate(-90deg);
     /* transform-origin: left bottom; */
     /* white-space: nowrap; */
-    z-index: 99999999999999999999999999999;
+    z-index: 9999;
     cursor: pointer;
   }
 }

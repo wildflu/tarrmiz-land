@@ -15,11 +15,11 @@ export const SideBar = () => {
 
 
     return(
-        <div className="font-notokufi flex flex-col jistify-center items-center gap-24 fixed bottom-5 left-0">
+        <div className="font-notokufi flex flex-col jistify-center z-50 items-center gap-24 fixed bottom-5 left-0">
             <ScrollProgressBar />
-            <p onClick={scrollToTop} className="rotate-vertical">العودة إلى الأعلى</p>
-            <div className="flex flex-col jistify-center items-center gap-3">
-                <Link href="https://x.com/tarmeeztech"><FontAwesomeIcon icon={faXTwitter} className="w-5 h-5 text-sky-400"/></Link>
+            <p onClick={scrollToTop} className="rotate-vertical z-50">العودة إلى الأعلى</p>
+            <div className="flex flex-col jistify-center items-center gap-3 z-50">
+                <Link href="https://x.com/tarmeeztech"><FontAwesomeIcon icon={faXTwitter} className="w-5 h-5 text-sky-400 z-50"/></Link>
                 <Link href="https://www.instagram.com/tarmeeztech/"><FontAwesomeIcon icon={faInstagram} className="w-5 h-5 text-sky-400"/></Link>
                 <Link href="https://web.facebook.com/tarmeeztech?_rdc=1&_rdr"><FontAwesomeIcon icon={faFacebook} className="w-5 h-5 text-sky-400"/></Link>
             </div>
