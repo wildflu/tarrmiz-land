@@ -1,13 +1,14 @@
 
 import { faCheck, faCircle, faXmark } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { TitleComponent } from "./title"
 
 
 export const OurPackages = () => {
 
 
-    return <section className="font-notokufi flex flex-col justify-center items-center gap-5 font-notokufi">
-        <h1 className="text-2xl font-bold p-12">عروضنا لك</h1>
+    return <section className="font-notokufi flex flex-col justify-center items-center gap-24 font-notokufi">
+        <TitleComponent title="عروضنا لك" />
         <div className="flex flex-row gap-3">
             <div className="flex flex-col border border-t-8 rounded border-sky-600 box-border p-6 gap-4 transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <div className="flex flex-col">

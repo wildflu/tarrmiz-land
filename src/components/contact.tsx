@@ -1,8 +1,11 @@
 import { faClock, faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { TitleComponent } from "./title"
 
 export const ContactUs = () => {
-    return <section className="font-notokufi mt-48 h-full w-full box-border px-24 m-auto flex flex-row font-notokufi">
+    return <div className="flex flex-col gap-6 mt-48 box-border px-24 m-auto font-notokufi">
+        <TitleComponent title="تواصل معنا"/>
+        <section className="h-full w-full flex flex-row">
         <div className="w-1/2 flex flex-col gap-2 box-border p-7">
             <h2 className="text-xl font-bold">تواصل معنا</h2>
             <p className="text-md font-mediium">
@@ -77,4 +80,5 @@ export const ContactUs = () => {
             </nav>
         </div>
     </section>
+    </div>
 }

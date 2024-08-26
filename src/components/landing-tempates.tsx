@@ -19,6 +19,7 @@ import s3 from "../../public/assets/s3.png";
 import s4 from "../../public/assets/s4.png";
 import s5 from "../../public/assets/s5.png";
 import s6 from "../../public/assets/s6.png";
+import { TitleComponent } from "./title";
 
 const templates:Template[] = [
     {
@@ -75,11 +76,8 @@ export const LandingTemplates = () => {
 
     return (
         <div className="font-notokufi my-24 flex flex-col gap-24 justify-center items-center">
-            <h1 className="font-bold text-3xl">
-                صفحات هبوط
-            </h1>
+            <TitleComponent title="صفحات هبوط" />
             <section className="box-border px-24 grid grid-cols-3 gap-12">
-                
                 {
                     templates.map((tem)=> {
                         return <div

@@ -6,15 +6,14 @@ import seo from "../../public/assets/seo.svg";
 import analytics from "../../public/assets/analytics.svg";
 import support from "../../public/assets/support.svg";
 import more from "../../public/assets/more.svg";
+import { TitleComponent } from "./title";
 
 
 export const WhyUs = () => {
     return (
         <div className="font-notokufi box-border px-24 mt-48 flex flex-col items-center w-full justify-center box-border p-4 gap-24">
             <div className="flex flex-col gap-2 items-center box-border">
-                <h3 className="text-xl font-bold">
-                    لماذا تختارنا؟  
-                </h3>
+                <TitleComponent title="لماذا تختارنا؟" /> 
                 <p className="text-md font-light">نقدم لك الخدمات الكاملة التي تحتاجها لتنمية أعمالك</p>
             </div>
             <div className="w-full flex flex-row gap-6 box-border p-3">
