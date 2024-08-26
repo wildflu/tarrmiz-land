@@ -9,7 +9,7 @@ export const OurPackages = () => {
 
     return <section className="font-notokufi flex flex-col justify-center items-center gap-24 font-notokufi">
         <TitleComponent title="عروضنا لك" />
-        <div className="flex flex-row gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2 2xl:grid-cols-4">
             <div className="flex flex-col border border-t-8 rounded border-sky-600 box-border p-6 gap-4 transition-transform duration-300 ease-in-out hover:-translate-y-2">
                 <div className="flex flex-col">
                     <h3 className="font-bold text-lg text-sky-600">باقة انطلق </h3>
